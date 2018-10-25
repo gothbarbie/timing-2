@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Button from '../Button'
+import Icon from './Icon'
 
-describe('components/atoms/Button', () => {
+describe('generic/atoms/Icon', () => {
   it('renders', () => {
-    const component = shallow(<Button>Test</Button>)
+    const component = shallow(<Icon icon={['fa', 'times']} />)
 
     expect(component).toMatchSnapshot()
   })

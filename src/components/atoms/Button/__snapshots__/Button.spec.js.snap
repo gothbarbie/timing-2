@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generic/atoms/Button renders Default style 1`] = `
+<styled.button
+  active={false}
+>
+  Text
+</styled.button>
+`;
+
+exports[`generic/atoms/Button renders Icon style 1`] = `
+<styled.button
+  active={false}
+>
+  <i />
+</styled.button>
+`;
+
+exports[`generic/atoms/Button renders Primary style 1`] = `
+<Styled(styled.button)
+  active={false}
+>
+  Text
+</Styled(styled.button)>
+`;

@@ -1,0 +1,1 @@
+export const SET_TIMESLOTS = 'SET_TIMESLOTS'

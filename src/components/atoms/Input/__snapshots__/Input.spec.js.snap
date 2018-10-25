@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generic/atoms/Input renders 1`] = `
+<styled.input
+  type="text"
+/>
+`;

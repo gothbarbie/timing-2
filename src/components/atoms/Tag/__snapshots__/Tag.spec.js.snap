@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generic/atoms/Tag renders 1`] = `
+<styled.button
+  onClick={[Function]}
+>
+  Tag 1
+</styled.button>
+`;
+
+exports[`generic/atoms/Tag renders blue 1`] = `
+<styled.button
+  blue={true}
+  onClick={[Function]}
+>
+  Tag 2
+</styled.button>
+`;

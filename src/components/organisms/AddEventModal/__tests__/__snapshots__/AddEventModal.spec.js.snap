@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generic/organisms/AddEventModal renders 1`] = `
+<section>
+  <div
+    class="sc-EHOje fpqoIO"
+  >
+    <label
+      class="sc-bZQynM snbku"
+      for="title"
+    >
+      Title
+    </label>
+    <input
+      class="sc-ifAKCX cYWJSo"
+      name="title"
+      type="text"
+    />
+  </div>
+  <div
+    class="sc-jTzLTM eaHDAf"
+  >
+    <div
+      class="sc-EHOje fpqoIO"
+    >
+      <label
+        class="sc-bZQynM snbku"
+        for="start"
+      >
+        Start
+      </label>
+      <input
+        class="sc-ifAKCX cYWJSo"
+        name="start"
+        type="date"
+      />
+    </div>
+    <div
+      class="sc-EHOje fpqoIO"
+    >
+      <label
+        class="sc-bZQynM snbku"
+        for="end"
+      >
+        End
+      </label>
+      <input
+        class="sc-ifAKCX cYWJSo"
+        name="end"
+        type="date"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-fjdhpX kvktnV"
+  >
+    <div
+      class="sc-dnqmqq iSdCun"
+    >
+      <label
+        class="sc-iwsKbI ishnVy"
+        for="category"
+      >
+        Category
+      </label>
+      <select
+        class="sc-htoDjs fTgUHt"
+        name="category"
+      >
+        <option
+          class="sc-gzVnrw ibZhkv"
+          value="TestValue"
+        >
+          TestValue
+        </option>
+      </select>
+    </div>
+    <button
+      class="sc-htpNat cdaQKa"
+    >
+      Edit
+    </button>
+  </div>
+  <div
+    class="sc-jTzLTM eaHDAf"
+  >
+    <div
+      class="sc-EHOje fpqoIO"
+    >
+      <label
+        class="sc-bZQynM snbku"
+        for="add-tags"
+      >
+        Add tags
+      </label>
+      <input
+        class="sc-ifAKCX cYWJSo"
+        name="add-tags"
+        type="text"
+      />
+    </div>
+    <div
+      class="sc-gqjmRU foEULD"
+    >
+      <label
+        class="sc-VigVT iIvxkR"
+      >
+        Used recently
+      </label>
+      <button
+        class="sc-gZMcBi daxmKN"
+      >
+        unit test
+      </button>
+    </div>
+  </div>
+  <div
+    class="sc-gqjmRU foEULD"
+  >
+    <label
+      class="sc-VigVT iIvxkR"
+    >
+      Selected tags
+    </label>
+    <button
+      class="sc-gZMcBi kcpxAK"
+    >
+      story-125
+    </button>
+  </div>
+  <div
+    class="sc-jzJRlG jumTEP"
+  >
+    <button
+      class="sc-htpNat elmvaw"
+    >
+      Create
+    </button>
+  </div>
+</section>
+`;

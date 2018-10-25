@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generic/molecules/LabeledSelect renders 1`] = `
+<styled.div>
+  <Styled(styled.label)
+    htmlFor="test"
+  >
+    Test
+  </Styled(styled.label)>
+  <Select
+    name="test"
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "key": "first",
+          "value": 1,
+        },
+      ]
+    }
+  />
+</styled.div>
+`;

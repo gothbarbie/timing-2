@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generic/atoms/Label renders 1`] = `
+<StyledComponent
+  forwardedClass={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: ",
+          [Function],
+          ";
+",
+        ],
+      },
+      "displayName": "styled.label",
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "label",
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  theme={
+    Object {
+      "colors": Object {
+        "background": "#EEEEEE",
+        "black": "#444444",
+        "dark": "#888888",
+        "gray": "#BBBBBB",
+        "lightGray": "#F6F6F6",
+        "primary": "#6A9AE2",
+        "primaryLight": "#E7F0FF",
+        "white": "#FCFCFC",
+      },
+    }
+  }
+>
+  Text
+</StyledComponent>
+`;
