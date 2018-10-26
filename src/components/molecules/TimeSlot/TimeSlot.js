@@ -2,17 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { openModal } from 'generic/molecules/Modal/modalActions'
+import { openModal } from '../Modal/modalActions'
 
-import Button from 'generic/atoms/Button'
-import Icon from 'generic/atoms/Icon/Icon'
-import IconButton from 'generic/atoms/IconButton'
+import Button from '../../atoms/Button'
+import Icon from '../../atoms/Icon/Icon'
+import IconButton from '../../atoms/IconButton'
 
 const TimeSlotStyle = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.lightGray};
-  background-color: ${({ blue, theme }) => blue && theme.colors.primaryLight};
+  background-color: ${({ theme }) => theme.palette.grayScale[1]};
+  background-color: ${({ blue, theme }) => blue && theme.palette.primary[1]};
 
   height: 5rem;
   padding: 0 1rem;
