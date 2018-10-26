@@ -1,33 +1,34 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import WeekNavigation from 'generic/organisms/WeekNavigation'
-import Scheduler from 'generic/organisms/Scheduler'
-import AddEventModal from 'generic/organisms/AddEventModal'
-import EditCategoriesModal from 'generic/organisms/EditCategoriesModal'
+import WeekNavigation from '../../organisms/WeekNavigation'
+import Scheduler from '../../organisms/Scheduler'
+import AddEventModal from '../../organisms/AddEventModal'
+import EditCategoriesModal from '../../organisms/EditCategoriesModal'
 
-import Modal from 'generic/molecules/Modal'
-import Category from 'generic/molecules/Category'
+import Modal from '../../molecules/Modal'
+import Category from '../../molecules/Category'
 
 const HomeStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.palette.background[0]};
 `
 
-const Home = ({ content }) => (
+const Home = ({ modalContent }) => (
   <HomeStyle>
     <WeekNavigation />
     <Scheduler />
-    {content === 'addEvent' && (
+    {modalContent === 'addEvent' && (
       <Modal title="Add event">
         <AddEventModal />
       </Modal>
     )}
-    {content === 'editCategories' && (
+    {modalContent === 'editCategories' && (
       <Modal title="Edit categories">
         <EditCategoriesModal />
       </Modal>
@@ -36,10 +37,14 @@ const Home = ({ content }) => (
   </HomeStyle>
 )
 
+Home.propTypes = {
+  modalContent: PropTypes.string.isRequired,
+}
+
 const mapStateToProps = ({ modal }) => {
-  const content = modal.content
+  const modalContent = modal.content
   return {
-    content,
+    modalContent,
   }
 }
 
