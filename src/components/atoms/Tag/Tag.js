@@ -10,27 +10,29 @@ const TagStyle = styled.button`
   font-weight: 500;
   border-radius: 4px;
   border: 1px solid
-    ${({ blue, theme }) => (blue ? theme.colors.primary : theme.colors.gray)};
+    ${({ blue, theme }) =>
+      blue ? theme.palette.primary[0] : theme.palette.grayScale[0]};
   background-color: ${({ blue, theme }) =>
-    blue ? theme.colors.primary : theme.colors.gray};
-  color: ${({ theme }) => theme.colors.white};
+    blue ? theme.palette.primary[0] : theme.palette.grayScale[0]};
+  color: ${({ theme }) => theme.palette.white[0]};
   outline: none;
 
   &:focus {
     border: 1px solid
-      ${({ blue, theme }) => (blue ? theme.colors.white : theme.colors.primary)};
+      ${({ blue, theme }) =>
+        blue ? theme.palette.white[0] : theme.palette.primary[0]};
     background: ${({ blue, theme }) =>
-      blue ? theme.colors.primary : theme.colors.primary};
+      blue ? theme.palette.primary[0] : theme.palette.primary[0]};
   }
 
   &:hover {
-    border: 1px solid ${({ theme }) => theme.colors.white};
+    border: 1px solid ${({ theme }) => theme.palette.white[0]};
   }
 
   &:active {
     background: ${({ blue, theme }) =>
-      blue ? theme.colors.primary : theme.colors.primary};
-    border: 1px solid ${({ theme }) => theme.colors.white};
+      blue ? theme.palette.primary[0] : theme.palette.primary[0]};
+    border: 1px solid ${({ theme }) => theme.palette.white[0]};
   }
 `
 
