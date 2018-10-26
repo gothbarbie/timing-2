@@ -37,13 +37,24 @@ const AddEventModal = ({ openModal }) => (
   <section>
     <LabeledInput label="Title" name="title" />
     <TwoColumns>
-      <LabeledInput label="Start" name="start" type="date" />
-      <LabeledInput label="End" name="end" type="date" />
+      <LabeledInput
+        label="Start"
+        name="start"
+        type="date"
+        onChange={() => console.log('changed')}
+      />
+      <LabeledInput
+        label="End"
+        name="end"
+        type="date"
+        onChange={() => console.log('changed')}
+      />
     </TwoColumns>
     <CategorySection>
       <LabeledSelect
         label="Category"
         name="category"
+        onChange={() => console.log('changed')}
         options={[{ key: 'Test', value: 'TestValue' }]}
       />
       <Button
@@ -55,7 +66,11 @@ const AddEventModal = ({ openModal }) => (
       </Button>
     </CategorySection>
     <TwoColumns>
-      <LabeledInput label="Add tags" name="add-tags" />
+      <LabeledInput
+        label="Add tags"
+        name="add-tags"
+        onChange={() => console.log('changed')}
+      />
       <LabeledTags
         label="Used recently"
         onClick={id => console.log('added', id)}
