@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/atoms/Tag renders 1`] = `
+<TagStyle
+  onClick={[Function]}
+>
+  Tag 1
+</TagStyle>
+`;
+
+exports[`components/atoms/Tag renders blue 1`] = `
+<TagStyle
+  blue={true}
+  onClick={[Function]}
+>
+  Tag 2
+</TagStyle>
+`;
