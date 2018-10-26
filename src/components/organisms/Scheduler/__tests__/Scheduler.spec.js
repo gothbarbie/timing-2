@@ -1,26 +1,21 @@
 import React from 'react'
 import { render } from 'enzyme'
-import { ThemeProvider } from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEllipsisH, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 
-import { theme } from '../../../Theme/Theme'
-
 import Scheduler from '../Scheduler'
-import Root from 'Root'
-import configureStore from 'store'
+import Root from 'components/Root'
+import Theme from 'components/Theme'
 
 library.add(faEllipsisH, faPlusCircle)
 
-const store = configureStore()
-
-describe('generic/organisms/Scheduler', () => {
+describe('components/organisms/Scheduler', () => {
   it('renders', () => {
     const component = render(
-      <Root store={store}>
-        <ThemeProvider theme={theme}>
+      <Root>
+        <Theme>
           <Scheduler />
-        </ThemeProvider>
+        </Theme>
       </Root>
     )
 
