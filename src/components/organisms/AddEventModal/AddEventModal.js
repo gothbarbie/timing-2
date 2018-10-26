@@ -1,14 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { openModal } from 'generic/molecules/Modal/modalActions'
+import { openModal } from '../../molecules/Modal/modalActions'
 
-import Button from 'generic/atoms/Button'
+import Button from '../../atoms/Button'
 
-import LabeledInput from 'generic/molecules/LabeledInput'
-import LabeledSelect from 'generic/molecules/LabeledSelect'
-import LabeledTags from 'generic/molecules/LabeledTags'
+import LabeledInput from '../../molecules/LabeledInput'
+import LabeledSelect from '../../molecules/LabeledSelect'
+import LabeledTags from '../../molecules/LabeledTags'
 
 const TwoColumns = styled.div`
   display: grid;
@@ -71,6 +72,10 @@ const AddEventModal = ({ openModal }) => (
     </AlignRight>
   </section>
 )
+
+AddEventModal.propTypes = {
+  openModal: PropTypes.func.isRequired,
+}
 
 const mapDispatchToProps = {
   openModal,
