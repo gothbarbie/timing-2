@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/molecules/NavButton renders 1`] = `
+<NavButtonStyle
+  onClick={[MockFunction]}
+  title="left"
+>
+  <Icon
+    icon={
+      Array [
+        "fas",
+        "arrow-circle-left",
+      ]
+    }
+  />
+</NavButtonStyle>
+`;
