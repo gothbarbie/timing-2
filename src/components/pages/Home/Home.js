@@ -9,7 +9,6 @@ import AddEventModal from '../../organisms/AddEventModal'
 import EditCategoriesModal from '../../organisms/EditCategoriesModal'
 
 import Modal from '../../molecules/Modal'
-import Category from '../../molecules/Category'
 
 const HomeStyle = styled.div`
   display: flex;
@@ -33,7 +32,6 @@ const Home = ({ modalContent }) => (
         <EditCategoriesModal />
       </Modal>
     )}
-    <Category />
   </HomeStyle>
 )
 
