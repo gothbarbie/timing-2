@@ -1,14 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
 import { nextWeek, previousWeek } from './weekActions'
 
-import H1 from 'generic/atoms/Typography/H1'
-import NavButton from 'generic/molecules/NavButton/NavButton'
+import H1 from '../../atoms/Typography/H1'
+import NavButton from '../../molecules/NavButton/NavButton'
 
 const H1Dimmed = styled(H1)`
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.palette.grayScale[2]};
 `
 
 const NavigationStyle = styled.nav`
@@ -26,6 +27,12 @@ const WeekNavigation = ({ nextWeek, previousWeek, week }) => (
     <NavButton direction="right" onClick={nextWeek} title="Next week" />
   </NavigationStyle>
 )
+
+WeekNavigation.propTypes = {
+  nextWeek: PropTypes.func.isRequired,
+  previousWeek: PropTypes.func.isRequired,
+  week: PropTypes.number.isRequired,
+}
 
 const mapStateToProps = ({ week }) => ({
   week,
