@@ -8,13 +8,13 @@ const Default = styled.button`
   width: ${({ fullWidth }) => fullWidth && '100%'};
 
   background-color: transparent;
-  color: ${({ theme }) => theme.palette.grayScale[0]};
+  color: ${({ theme }) => theme.palette.grayScale[2]};
   color: ${({ active, theme }) => active && theme.palette.primary[0]};
   outline: none;
   font-size: 1.6rem;
   font-weight: 500;
   border: 1px solid transparent;
-  border-color: ${({ active, theme }) => active && theme.palette.grayScale[0]};
+  border-color: ${({ active, theme }) => active && theme.palette.grayScale[2]};
   padding: 1rem 2rem;
   padding: ${({ size }) => size === 's' && '.5rem'};
 
@@ -23,9 +23,9 @@ const Default = styled.button`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.palette.grayScale[1]};
+    background-color: ${({ theme }) => theme.palette.grayScale[2]};
     color: ${({ theme }) => theme.palette.primary[0]};
-    border-color: ${({ theme }) => theme.palette.grayScale[0]};
+    border-color: ${({ theme }) => theme.palette.grayScale[2]};
   }
 
   &:active {
@@ -37,12 +37,14 @@ const Default = styled.button`
 
 const WithIcon = styled(Default)`
   &:focus {
+    background-color: transparent;
     border-color: ${({ theme }) => theme.palette.grayScale[2]};
     color: ${({ theme }) => theme.palette.primary[0]};
   }
 
   &:hover {
-    border-color: ${({ theme }) => theme.palette.grayScale[0]};
+    background-color: transparent;
+    border-color: ${({ theme }) => theme.palette.grayScale[2]};
     color: ${({ theme }) => theme.palette.primary[0]};
     fill: ${({ theme }) => theme.palette.primary[0]};
   }
