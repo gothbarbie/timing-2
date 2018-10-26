@@ -8,6 +8,7 @@ describe('components/atoms/Select', () => {
     const options = [
       {
         key: 'test',
+        name: 'test',
         value: 'test',
       },
     ]
