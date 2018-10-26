@@ -50,7 +50,7 @@ class Modal extends React.PureComponent {
   render() {
     const { closeModal, children, title, visible } = this.props
 
-    return !visible ? null : (
+    return visible ? (
       <Overlay id="overlay" onClick={this.onClickHandler}>
         <ModalStyle>
           <ModalHeader>
@@ -66,7 +66,7 @@ class Modal extends React.PureComponent {
           <ModalMain>{children}</ModalMain>
         </ModalStyle>
       </Overlay>
-    )
+    ) : null
   }
 }
 
