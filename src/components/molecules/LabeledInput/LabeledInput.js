@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Label from '../../atoms/Label'
@@ -19,5 +20,12 @@ const LabeledInput = ({ name, label, onChange, type }) => (
     <Input name={name} onChange={onChange} type={type} />
   </LabeledInputStyle>
 )
+
+LabeledInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  type: PropTypes.string,
+}
 
 export default LabeledInput
