@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generic/molecules/LabeledSelect renders 1`] = `
-<styled.div>
-  <Styled(styled.label)
+<LabeledSelectWrapper>
+  <LabelStyled
     htmlFor="test"
   >
     Test
-  </Styled(styled.label)>
+  </LabelStyled>
   <Select
     name="test"
     onChange={[Function]}
@@ -19,5 +19,5 @@ exports[`generic/molecules/LabeledSelect renders 1`] = `
       ]
     }
   />
-</styled.div>
+</LabeledSelectWrapper>
 `;

@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generic/molecules/LabeledTags renders 1`] = `
-<styled.div>
-  <Styled(styled.label)>
+<LabeledTagsWrapper>
+  <LabelStyled>
     Test Tags
-  </Styled(styled.label)>
+  </LabelStyled>
   <Tag
     blue={true}
     key="1"
     name="tag 1"
     onClick={[Function]}
   />
-</styled.div>
+</LabeledTagsWrapper>
 `;
