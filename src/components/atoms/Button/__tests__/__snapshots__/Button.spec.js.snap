@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/atoms/Button renders Default style 1`] = `
+<Default
+  active={false}
+>
+  Text
+</Default>
+`;
+
+exports[`components/atoms/Button renders Icon style 1`] = `
+<WithIcon
+  active={false}
+  hasIcon={true}
+>
+  <i />
+</WithIcon>
+`;
+
+exports[`components/atoms/Button renders Primary style 1`] = `
+<Primary
+  active={false}
+>
+  Text
+</Primary>
+`;

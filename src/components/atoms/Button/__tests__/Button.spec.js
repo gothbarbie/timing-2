@@ -1,29 +1,24 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { theme } from '../../Theme'
-import Button from './Button'
+import Button from '../Button'
 
-describe('generic/atoms/Button', () => {
+describe('components/atoms/Button', () => {
   it('renders Default style', () => {
-    const component = shallow(<Button theme={theme}>Text</Button>)
+    const component = shallow(<Button>Text</Button>)
 
     expect(component).toMatchSnapshot()
   })
 
   it('renders Primary style', () => {
-    const component = shallow(
-      <Button primary theme={theme}>
-        Text
-      </Button>
-    )
+    const component = shallow(<Button primary>Text</Button>)
 
     expect(component).toMatchSnapshot()
   })
 
   it('renders Icon style', () => {
     const component = shallow(
-      <Button icon theme={theme}>
+      <Button hasIcon>
         <i />
       </Button>
     )
