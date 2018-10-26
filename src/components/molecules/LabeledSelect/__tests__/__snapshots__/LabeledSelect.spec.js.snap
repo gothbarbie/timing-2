@@ -9,11 +9,12 @@ exports[`generic/molecules/LabeledSelect renders 1`] = `
   </LabelStyled>
   <Select
     name="test"
-    onChange={[Function]}
+    onChange={[MockFunction]}
     options={
       Array [
         Object {
-          "key": "first",
+          "key": 1,
+          "name": "first",
           "value": 1,
         },
       ]
