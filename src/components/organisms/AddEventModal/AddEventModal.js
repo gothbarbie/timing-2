@@ -55,7 +55,7 @@ const AddEventModal = ({ openModal }) => (
         label="Category"
         name="category"
         onChange={() => console.log('changed')}
-        options={[{ key: 'Test', value: 'TestValue' }]}
+        options={[{ key: 'Test', name: 'Test Name', value: 'TestValue' }]}
       />
       <Button
         fullWidth
