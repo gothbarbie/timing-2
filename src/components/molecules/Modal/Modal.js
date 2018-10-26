@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
@@ -20,12 +21,12 @@ const Overlay = styled.div`
 
 const ModalStyle = styled.div`
   min-width: 300px;
-  background: ${({ theme }) => theme.colors.background};
+  background: ${({ theme }) => theme.palette.white[0]};
 `
 
 const ModalHeader = styled.header`
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.palette.primary[0]};
+  color: ${({ theme }) => theme.palette.white[0]};
   font-size: 2.4rem;
   font-weight: 500;
   padding: 1rem 1rem 1rem 3rem;
@@ -67,6 +68,13 @@ class Modal extends React.PureComponent {
       </Overlay>
     )
   }
+}
+
+Modal.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  visible: PropTypes.bool.isRequired,
 }
 
 const mapStateToProps = ({ modal }) => {
