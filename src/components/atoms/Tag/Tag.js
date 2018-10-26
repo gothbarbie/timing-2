@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const TagStyle = styled.button`
@@ -11,9 +12,9 @@ const TagStyle = styled.button`
   border-radius: 4px;
   border: 1px solid
     ${({ blue, theme }) =>
-      blue ? theme.palette.primary[0] : theme.palette.grayScale[0]};
+      blue ? theme.palette.primary[0] : theme.palette.grayScale[2]};
   background-color: ${({ blue, theme }) =>
-    blue ? theme.palette.primary[0] : theme.palette.grayScale[0]};
+    blue ? theme.palette.primary[0] : theme.palette.grayScale[2]};
   color: ${({ theme }) => theme.palette.white[0]};
   outline: none;
 
@@ -41,5 +42,11 @@ const Tag = ({ blue, name, onClick }) => (
     {name}
   </TagStyle>
 )
+
+Tag.propTypes = {
+  blue: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+}
 
 export default Tag
