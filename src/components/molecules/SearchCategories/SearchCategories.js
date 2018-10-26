@@ -1,16 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
 import { setCategoriesFilter } from './categoriesFilterActions'
 import { getFilteredCategories } from './categoriesSelectors'
 
-import Icon from 'generic/atoms/Icon'
-import Button from 'generic/atoms/Button'
+import Icon from '../../atoms/Icon'
+import Button from '../../atoms/Button'
 
-import LabeledInput from 'generic/molecules/LabeledInput'
+import LabeledInput from '../LabeledInput'
 
-import Category from 'generic/molecules/Category'
+import Category from '../Category'
 
 const FormSection = styled.section`
   display: grid;
@@ -31,7 +32,7 @@ const NoResults = styled.div`
   margin: 3rem 0;
   font-size: 1.4rem;
   font-weight: 500;
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.palette.grayScale[0]};
 `
 
 class SearchCategories extends React.PureComponent {
@@ -42,6 +43,7 @@ class SearchCategories extends React.PureComponent {
 
   render() {
     console.log('categories', this.props.categories)
+    const { categories } = this.props
     return (
       <>
         <FormSection>
@@ -57,10 +59,8 @@ class SearchCategories extends React.PureComponent {
         </FormSection>
 
         <SearchResults>
-          {!this.props.categories.length && (
-            <NoResults>Search to get results</NoResults>
-          )}
-          {this.props.categories.map(category => (
+          {!categories.length && <NoResults>Search to get results</NoResults>}
+          {categories.map(category => (
             <Category
               id={category[0]}
               key={category[0]}
@@ -71,6 +71,11 @@ class SearchCategories extends React.PureComponent {
       </>
     )
   }
+}
+
+SearchCategories.propTypes = {
+  categories: PropTypes.shape({}).isRequired,
+  setCategoriesFilter: PropTypes.func.isRequired,
 }
 
 const mapStateToProps = state => ({
