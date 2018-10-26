@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 
 import { updateCategory, removeCategory } from './categoryActions'
 
-import IconButton from 'generic/atoms/IconButton'
+import IconButton from '../../atoms/IconButton'
 
 const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.primaryLight};
+  background-color: ${({ theme }) => theme.palette.primary[1]};
   border-radius: 4px;
-  border: 1px solid ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.palette.white[0]};
   display: flex;
   padding: 0.5rem 1rem;
   align-items: center;
@@ -19,15 +19,15 @@ const Wrapper = styled.div`
 const EditNameInput = styled.input`
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.primary};
+  border-bottom: 1px solid ${({ theme }) => theme.palette.primary[0]};
+  color: ${({ theme }) => theme.palette.primary[0]};
   outline: none;
   font-size: 1.4rem;
 `
 
 const Name = styled.div`
   font-size: 1.4rem;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.palette.primary[0]};
   font-weight: 500;
 `
 
