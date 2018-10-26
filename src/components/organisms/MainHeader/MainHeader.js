@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const MainHeaderStyle = styled.header`
   display: flex;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.palette.primary[0]};
+  color: ${({ theme }) => theme.palette.white[0]};
   padding: 1rem 0;
 `
 
