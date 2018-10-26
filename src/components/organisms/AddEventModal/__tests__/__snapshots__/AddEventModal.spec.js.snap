@@ -123,7 +123,7 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       Selected tags
     </label>
     <button
-      class="TagStyle-eyrq69-0 iMbJEu"
+      class="TagStyle-eyrq69-0 fCHVhY"
     >
       story-125
     </button>
