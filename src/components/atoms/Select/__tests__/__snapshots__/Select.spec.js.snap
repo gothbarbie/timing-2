@@ -2,7 +2,8 @@
 
 exports[`components/atoms/Select renders 1`] = `
 <SelectStyle
-  name="test"
+  name="Test"
+  onChange={[MockFunction]}
 >
   <Option
     key="test"

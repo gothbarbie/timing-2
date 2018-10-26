@@ -11,7 +11,14 @@ describe('components/atoms/Select', () => {
         value: 'test',
       },
     ]
-    const component = shallow(<Select name="test" options={options} />)
+
+    const props = {
+      name: 'Test',
+      options,
+      onChange: jest.fn(),
+    }
+
+    const component = shallow(<Select {...props} />)
 
     expect(component).toMatchSnapshot()
   })
