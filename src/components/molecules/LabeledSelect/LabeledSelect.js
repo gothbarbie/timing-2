@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Label from '../../atoms/Label'
@@ -19,5 +20,17 @@ const LabeledSelect = ({ label, name, onChange, options }) => (
     <Select name={name} onChange={onChange} options={options} />
   </LabeledSelectWrapper>
 )
+
+LabeledSelect.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.any.isRequired,
+      name: PropTypes.any.isRequired,
+    }).isRequired
+  ).isRequired,
+}
 
 export default LabeledSelect
