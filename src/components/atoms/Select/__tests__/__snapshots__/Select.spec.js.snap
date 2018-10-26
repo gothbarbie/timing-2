@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/atoms/Select renders 1`] = `
+<SelectStyle
+  name="test"
+>
+  <Option
+    key="test"
+    value="test"
+  >
+    test
+  </Option>
+</SelectStyle>
+`;

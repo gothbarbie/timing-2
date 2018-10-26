@@ -1,10 +1,9 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { theme } from '../../Theme'
-import Select from './Select'
+import Select from '../Select'
 
-describe('generic/atoms/Select', () => {
+describe('components/atoms/Select', () => {
   it('renders', () => {
     const options = [
       {
@@ -12,9 +11,7 @@ describe('generic/atoms/Select', () => {
         value: 'test',
       },
     ]
-    const component = shallow(
-      <Select theme={theme} name="test" options={options} />
-    )
+    const component = shallow(<Select name="test" options={options} />)
 
     expect(component).toMatchSnapshot()
   })
