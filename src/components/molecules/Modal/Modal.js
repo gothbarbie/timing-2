@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { closeModal } from './modalActions'
 
-import IconButton from 'generic/atoms/IconButton'
+import IconButton from '../../atoms/IconButton'
 
 const Overlay = styled.div`
   position: fixed;
