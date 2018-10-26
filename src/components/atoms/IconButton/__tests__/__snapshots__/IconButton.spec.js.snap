@@ -1,13 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/atoms/IconButton renders 1`] = `
-<ButtonStyle>
+<ButtonStyle
+  color="gray"
+  hoverColor="gray"
+  onClick={[MockFunction]}
+>
   <FontAwesomeIcon
     border={false}
     className=""
     fixedWidth={false}
     flip={null}
-    icon={null}
+    icon={
+      Array [
+        "fas",
+        "chevron-down",
+      ]
+    }
     inverse={false}
     listItem={false}
     mask={null}
