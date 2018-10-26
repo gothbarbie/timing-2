@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`generic/molecules/Category renders 1`] = `
+exports[`components/molecules/Category renders 1`] = `
 <div
-  class="sc-bwzfXH cySFlP"
+  class="Wrapper-sc-2g2vqg-0 gmbYEl"
 >
   <div
-    class="sc-bxivhb dhybnW"
+    class="Name-sc-2g2vqg-2 eFcUCW"
   />
   <div
-    class="sc-ifAKCX jRuKtk"
+    class="Actions-sc-2g2vqg-3 eTBkCB"
   >
     <button
-      class="sc-bdVaJa iCiGIa"
+      class="ButtonStyle-sc-1vcx5rr-0 gAdyQJ"
       color="primary"
     >
       <svg
@@ -30,7 +30,7 @@ exports[`generic/molecules/Category renders 1`] = `
       </svg>
     </button>
     <button
-      class="sc-bdVaJa iCiGIa"
+      class="ButtonStyle-sc-1vcx5rr-0 gAdyQJ"
       color="primary"
     >
       <svg

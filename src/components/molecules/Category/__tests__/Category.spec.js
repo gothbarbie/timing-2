@@ -1,25 +1,21 @@
 import React from 'react'
 import { render } from 'enzyme'
-import { ThemeProvider } from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPencilAlt, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-import Root from 'Root'
-import configureStore from 'store'
-import { theme } from '../../../Theme'
+import Root from 'components/Root'
+import Theme from 'components/Theme'
 import Category from '../Category'
 
 library.add(faTimes, faPencilAlt)
 
-const store = configureStore()
-
-describe('generic/molecules/Category', () => {
+describe('components/molecules/Category', () => {
   it('renders', () => {
     const component = render(
-      <Root store={store}>
-        <ThemeProvider theme={theme}>
+      <Root>
+        <Theme>
           <Category />
-        </ThemeProvider>
+        </Theme>
       </Root>
     )
 
