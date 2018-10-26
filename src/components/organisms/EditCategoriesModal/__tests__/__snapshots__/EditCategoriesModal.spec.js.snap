@@ -9,19 +9,19 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
       class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="LabelStyled-haayko-1 fEltIH"
+        class="LabelStyled-haayko-1 iNeUPg"
         for="new-category"
       >
         New
       </label>
       <input
-        class="InputStyle-sc-1jmrrj1-0 gbepqK"
+        class="InputStyle-sc-1jmrrj1-0 jTNhfr"
         name="new-category"
         type="text"
       />
     </div>
     <button
-      class="Primary-sc-12a0ki3-2 bcnANy"
+      class="Primary-sc-12a0ki3-2 eysKsr"
     >
       Add
     </button>
@@ -33,19 +33,19 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
       class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="LabelStyled-haayko-1 fEltIH"
+        class="LabelStyled-haayko-1 iNeUPg"
         for="search-category"
       >
         Search
       </label>
       <input
-        class="InputStyle-sc-1jmrrj1-0 gbepqK"
+        class="InputStyle-sc-1jmrrj1-0 jTNhfr"
         name="search-category"
         type="search"
       />
     </div>
     <button
-      class="Primary-sc-12a0ki3-2 bcnANy"
+      class="Primary-sc-12a0ki3-2 eysKsr"
     >
       <svg
         aria-hidden="true"
@@ -67,7 +67,7 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
     class="SearchResults-kjv4fi-1 jsvAnJ"
   >
     <div
-      class="NoResults-kjv4fi-2 lkDeTh"
+      class="NoResults-kjv4fi-2 GhGmn"
     >
       Search to get results
     </div>
@@ -76,7 +76,7 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
     class="RecentlyUsed-sc-1yn6kn1-1 fTklpT"
   >
     <label
-      class="Label-a0jzeo-0 eiHxxj"
+      class="Label-a0jzeo-0 cDFpgW"
     >
       Recently used
     </label>
@@ -84,7 +84,7 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
       class="CategoriesList-sc-1yn6kn1-2 TmoyH"
     >
       <div
-        class="Wrapper-sc-2g2vqg-0 gmbYEl"
+        class="Wrapper-sc-2g2vqg-0 fOMrzT"
       >
         <div
           class="Name-sc-2g2vqg-2 eFcUCW"
@@ -135,7 +135,7 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
         </div>
       </div>
       <div
-        class="Wrapper-sc-2g2vqg-0 gmbYEl"
+        class="Wrapper-sc-2g2vqg-0 fOMrzT"
       >
         <div
           class="Name-sc-2g2vqg-2 eFcUCW"
@@ -191,7 +191,7 @@ exports[`components/organisms/EditCategoriesModal renders 1`] = `
     class="AlignRight-sc-1yn6kn1-3 bdLudd"
   >
     <button
-      class="Primary-sc-12a0ki3-2 bcnANy"
+      class="Primary-sc-12a0ki3-2 eysKsr"
     >
       Create
     </button>
