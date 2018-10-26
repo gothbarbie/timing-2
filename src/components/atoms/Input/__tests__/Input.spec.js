@@ -5,7 +5,12 @@ import Input from '../Input'
 
 describe('components/atoms/Input', () => {
   it('renders', () => {
-    const component = shallow(<Input />)
+    const props = {
+      name: 'test',
+      onChange: jest.fn(),
+      type: 'text',
+    }
+    const component = shallow(<Input {...props} />)
 
     expect(component).toMatchSnapshot()
   })
