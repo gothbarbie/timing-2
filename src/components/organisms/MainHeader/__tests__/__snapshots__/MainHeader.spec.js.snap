@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`organisms/MainHeader renders 1`] = `
+<MainHeaderStyle>
+  <MaxWidth>
+    <Logo>
+      Timing
+    </Logo>
+     
+    <Username>
+      Username
+    </Username>
+  </MaxWidth>
+</MainHeaderStyle>
+`;
