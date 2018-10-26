@@ -1,13 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import Button from 'generic/atoms/Button'
-import Label from 'generic/atoms/Label'
+import Button from '../../atoms/Button'
+import Label from '../../atoms/Label'
 
-import LabeledInput from 'generic/molecules/LabeledInput'
-import Category from 'generic/molecules/Category'
-import SearchCategories from 'generic/molecules/SearchCategories'
+import LabeledInput from '../../molecules/LabeledInput'
+import Category from '../../molecules/Category'
+import SearchCategories from '../../molecules/SearchCategories'
 
 const FormSection = styled.section`
   display: grid;
@@ -36,7 +37,7 @@ const AlignRight = styled.div`
 const EditCategoriesModal = ({ categories }) => (
   <section>
     <FormSection>
-      <LabeledInput label="New" name="new-category" />
+      <LabeledInput label="New" name="new-category" onChange={() => {}} />
       <Button primary>Add</Button>
     </FormSection>
 
@@ -55,6 +56,10 @@ const EditCategoriesModal = ({ categories }) => (
     </AlignRight>
   </section>
 )
+
+EditCategoriesModal.propTypes = {
+  categories: PropTypes.shape({}).isRequired,
+}
 
 const mapStateToProps = ({ categories }) => ({
   categories,
