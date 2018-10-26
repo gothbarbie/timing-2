@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
@@ -11,7 +12,7 @@ import IconButton from '../../atoms/IconButton'
 const TimeSlotStyle = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${({ theme }) => theme.palette.grayScale[1]};
+  background-color: ${({ theme }) => theme.palette.white[0]};
   background-color: ${({ blue, theme }) => blue && theme.palette.primary[1]};
 
   height: 5rem;
@@ -48,6 +49,13 @@ const TimeSlot = ({ data, openModal }) => {
       </Button>
     </TimeSlotStyle>
   )
+}
+
+TimeSlot.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+  }),
+  openModal: PropTypes.func.isRequired,
 }
 
 const mapDispatchToProps = {
