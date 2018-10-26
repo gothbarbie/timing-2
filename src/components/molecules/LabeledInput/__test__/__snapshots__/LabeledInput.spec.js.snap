@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`generic/molecules/LabeledInput renders 1`] = `
+exports[`components/molecules/LabeledInput renders 1`] = `
 <LabeledInputStyle>
   <LabelStyled
     htmlFor="test"
@@ -9,7 +9,7 @@ exports[`generic/molecules/LabeledInput renders 1`] = `
   </LabelStyled>
   <Input
     name="test"
-    onChange={[Function]}
+    onChange={[MockFunction]}
   />
 </LabeledInputStyle>
 `;
