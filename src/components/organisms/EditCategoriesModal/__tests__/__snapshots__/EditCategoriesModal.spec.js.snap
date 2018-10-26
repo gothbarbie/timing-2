@@ -1,55 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`generic/organisms/EditCategoriesModal renders 1`] = `
+exports[`components/organisms/EditCategoriesModal renders 1`] = `
 <section>
   <section
-    class="sc-jzJRlG bqpEsS"
+    class="FormSection-sc-1yn6kn1-0 ikNcwH"
   >
     <div
-      class="sc-EHOje fpqoIO"
+      class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="sc-bZQynM snbku"
+        class="LabelStyled-haayko-1 fEltIH"
         for="new-category"
       >
         New
       </label>
       <input
-        class="sc-ifAKCX cYWJSo"
+        class="InputStyle-sc-1jmrrj1-0 gbepqK"
         name="new-category"
         type="text"
       />
     </div>
     <button
-      class="sc-htpNat elmvaw"
+      class="Primary-sc-12a0ki3-2 bcnANy"
     >
       Add
     </button>
   </section>
   <section
-    class="sc-VigVT iJbgFv"
+    class="FormSection-kjv4fi-0 dEHpOz"
   >
     <div
-      class="sc-EHOje fpqoIO"
+      class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="sc-bZQynM snbku"
+        class="LabelStyled-haayko-1 fEltIH"
         for="search-category"
       >
         Search
       </label>
       <input
-        class="sc-ifAKCX cYWJSo"
+        class="InputStyle-sc-1jmrrj1-0 gbepqK"
         name="search-category"
         type="search"
       />
     </div>
     <button
-      class="sc-htpNat elmvaw"
+      class="Primary-sc-12a0ki3-2 bcnANy"
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-search fa-w-16 sc-gqjmRU desCyV"
+        class="svg-inline--fa fa-search fa-w-16 IconStyle-sc-1dp848p-0 iFEbEV"
         data-icon="search"
         data-prefix="fas"
         role="img"
@@ -64,38 +64,38 @@ exports[`generic/organisms/EditCategoriesModal renders 1`] = `
     </button>
   </section>
   <section
-    class="sc-jTzLTM hRWMOj"
+    class="SearchResults-kjv4fi-1 jsvAnJ"
   >
     <div
-      class="sc-fjdhpX WpPIX"
+      class="NoResults-kjv4fi-2 lkDeTh"
     >
       Search to get results
     </div>
   </section>
   <section
-    class="sc-cSHVUG CAuLq"
+    class="RecentlyUsed-sc-1yn6kn1-1 fTklpT"
   >
     <label
-      class="sc-bxivhb jYacTM"
+      class="Label-a0jzeo-0 eiHxxj"
     >
       Recently used
     </label>
     <div
-      class="sc-kAzzGY eOXwrh"
+      class="CategoriesList-sc-1yn6kn1-2 TmoyH"
     >
       <div
-        class="sc-htoDjs gRmJjR"
+        class="Wrapper-sc-2g2vqg-0 gmbYEl"
       >
         <div
-          class="sc-iwsKbI IEitu"
+          class="Name-sc-2g2vqg-2 eFcUCW"
         >
           test-1
         </div>
         <div
-          class="sc-gZMcBi llkwiA"
+          class="Actions-sc-2g2vqg-3 eTBkCB"
         >
           <button
-            class="sc-gzVnrw dwptPo"
+            class="ButtonStyle-sc-1vcx5rr-0 gAdyQJ"
             color="primary"
           >
             <svg
@@ -114,7 +114,7 @@ exports[`generic/organisms/EditCategoriesModal renders 1`] = `
             </svg>
           </button>
           <button
-            class="sc-gzVnrw dwptPo"
+            class="ButtonStyle-sc-1vcx5rr-0 gAdyQJ"
             color="primary"
           >
             <svg
@@ -135,18 +135,18 @@ exports[`generic/organisms/EditCategoriesModal renders 1`] = `
         </div>
       </div>
       <div
-        class="sc-htoDjs gRmJjR"
+        class="Wrapper-sc-2g2vqg-0 gmbYEl"
       >
         <div
-          class="sc-iwsKbI IEitu"
+          class="Name-sc-2g2vqg-2 eFcUCW"
         >
           test-2
         </div>
         <div
-          class="sc-gZMcBi llkwiA"
+          class="Actions-sc-2g2vqg-3 eTBkCB"
         >
           <button
-            class="sc-gzVnrw dwptPo"
+            class="ButtonStyle-sc-1vcx5rr-0 gAdyQJ"
             color="primary"
           >
             <svg
@@ -165,7 +165,7 @@ exports[`generic/organisms/EditCategoriesModal renders 1`] = `
             </svg>
           </button>
           <button
-            class="sc-gzVnrw dwptPo"
+            class="ButtonStyle-sc-1vcx5rr-0 gAdyQJ"
             color="primary"
           >
             <svg
@@ -188,10 +188,10 @@ exports[`generic/organisms/EditCategoriesModal renders 1`] = `
     </div>
   </section>
   <div
-    class="sc-chPdSV gZWPpb"
+    class="AlignRight-sc-1yn6kn1-3 bdLudd"
   >
     <button
-      class="sc-htpNat elmvaw"
+      class="Primary-sc-12a0ki3-2 bcnANy"
     >
       Create
     </button>

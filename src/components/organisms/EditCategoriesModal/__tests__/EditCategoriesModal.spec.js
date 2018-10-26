@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from 'enzyme'
-import { ThemeProvider } from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faSearch,
@@ -8,23 +7,20 @@ import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 
-import { theme } from '../../../Theme/Theme'
+import Root from 'components/Root'
+import Theme from 'components/Theme'
 
 import EditCategoriesModal from '../EditCategoriesModal'
-import Root from 'Root'
-import configureStore from 'store'
 
 library.add(faSearch, faPencilAlt, faTimes)
 
-const store = configureStore()
-
-describe('generic/organisms/EditCategoriesModal', () => {
+describe('components/organisms/EditCategoriesModal', () => {
   it('renders', () => {
     const component = render(
-      <Root store={store}>
-        <ThemeProvider theme={theme}>
+      <Root>
+        <Theme>
           <EditCategoriesModal />
-        </ThemeProvider>
+        </Theme>
       </Root>
     )
 
