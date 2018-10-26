@@ -16,10 +16,13 @@ library.add(faSearch, faPencilAlt, faTimes)
 
 describe('generic/organisms/AddEventModal', () => {
   it('renders', () => {
+    const props = {
+      openModal: jest.fn(),
+    }
     const component = render(
       <Root>
         <Theme>
-          <AddEventModal />
+          <AddEventModal {...props} />
         </Theme>
       </Root>
     )

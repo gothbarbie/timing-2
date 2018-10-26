@@ -6,13 +6,13 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
     class="LabeledInputStyle-haayko-0 hPxfKk"
   >
     <label
-      class="LabelStyled-haayko-1 fEltIH"
+      class="LabelStyled-haayko-1 iNeUPg"
       for="title"
     >
       Title
     </label>
     <input
-      class="InputStyle-sc-1jmrrj1-0 gbepqK"
+      class="InputStyle-sc-1jmrrj1-0 jTNhfr"
       name="title"
       type="text"
     />
@@ -24,13 +24,13 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="LabelStyled-haayko-1 fEltIH"
+        class="LabelStyled-haayko-1 iNeUPg"
         for="start"
       >
         Start
       </label>
       <input
-        class="InputStyle-sc-1jmrrj1-0 gbepqK"
+        class="InputStyle-sc-1jmrrj1-0 jTNhfr"
         name="start"
         type="date"
       />
@@ -39,13 +39,13 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="LabelStyled-haayko-1 fEltIH"
+        class="LabelStyled-haayko-1 iNeUPg"
         for="end"
       >
         End
       </label>
       <input
-        class="InputStyle-sc-1jmrrj1-0 gbepqK"
+        class="InputStyle-sc-1jmrrj1-0 jTNhfr"
         name="end"
         type="date"
       />
@@ -58,13 +58,13 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       class="LabeledSelectWrapper-sc-1d94pvh-0 koZAra"
     >
       <label
-        class="LabelStyled-sc-1d94pvh-1 bWjFns"
+        class="LabelStyled-sc-1d94pvh-1 djEQgi"
         for="category"
       >
         Category
       </label>
       <select
-        class="SelectStyle-sc-1tz5py4-1 biretF"
+        class="SelectStyle-sc-1tz5py4-1 RgsRi"
         name="category"
       >
         <option
@@ -76,7 +76,7 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       </select>
     </div>
     <button
-      class="Primary-sc-12a0ki3-2 imxZGA"
+      class="Primary-sc-12a0ki3-2 fJfBRD"
     >
       Edit
     </button>
@@ -88,13 +88,13 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="LabelStyled-haayko-1 fEltIH"
+        class="LabelStyled-haayko-1 iNeUPg"
         for="add-tags"
       >
         Add tags
       </label>
       <input
-        class="InputStyle-sc-1jmrrj1-0 gbepqK"
+        class="InputStyle-sc-1jmrrj1-0 jTNhfr"
         name="add-tags"
         type="text"
       />
@@ -103,12 +103,12 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       class="LabeledTagsWrapper-yk8e0z-0 ijUAhs"
     >
       <label
-        class="LabelStyled-yk8e0z-1 eEyMjh"
+        class="LabelStyled-yk8e0z-1 kgRpzo"
       >
         Used recently
       </label>
       <button
-        class="TagStyle-eyrq69-0 hPIVFq"
+        class="TagStyle-eyrq69-0 jAHVai"
       >
         unit test
       </button>
@@ -118,12 +118,12 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
     class="LabeledTagsWrapper-yk8e0z-0 ijUAhs"
   >
     <label
-      class="LabelStyled-yk8e0z-1 eEyMjh"
+      class="LabelStyled-yk8e0z-1 kgRpzo"
     >
       Selected tags
     </label>
     <button
-      class="TagStyle-eyrq69-0 gQTpbd"
+      class="TagStyle-eyrq69-0 iMbJEu"
     >
       story-125
     </button>
@@ -132,7 +132,7 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
     class="AlignRight-w64ir1-2 bDFrer"
   >
     <button
-      class="Primary-sc-12a0ki3-2 bcnANy"
+      class="Primary-sc-12a0ki3-2 eysKsr"
     >
       Create
     </button>
