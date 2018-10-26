@@ -3,72 +3,72 @@
 exports[`generic/organisms/AddEventModal renders 1`] = `
 <section>
   <div
-    class="sc-EHOje fpqoIO"
+    class="LabeledInputStyle-haayko-0 hPxfKk"
   >
     <label
-      class="sc-bZQynM snbku"
+      class="LabelStyled-haayko-1 fEltIH"
       for="title"
     >
       Title
     </label>
     <input
-      class="sc-ifAKCX cYWJSo"
+      class="InputStyle-sc-1jmrrj1-0 gbepqK"
       name="title"
       type="text"
     />
   </div>
   <div
-    class="sc-jTzLTM eaHDAf"
+    class="TwoColumns-w64ir1-0 cMUdUm"
   >
     <div
-      class="sc-EHOje fpqoIO"
+      class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="sc-bZQynM snbku"
+        class="LabelStyled-haayko-1 fEltIH"
         for="start"
       >
         Start
       </label>
       <input
-        class="sc-ifAKCX cYWJSo"
+        class="InputStyle-sc-1jmrrj1-0 gbepqK"
         name="start"
         type="date"
       />
     </div>
     <div
-      class="sc-EHOje fpqoIO"
+      class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="sc-bZQynM snbku"
+        class="LabelStyled-haayko-1 fEltIH"
         for="end"
       >
         End
       </label>
       <input
-        class="sc-ifAKCX cYWJSo"
+        class="InputStyle-sc-1jmrrj1-0 gbepqK"
         name="end"
         type="date"
       />
     </div>
   </div>
   <div
-    class="sc-fjdhpX kvktnV"
+    class="CategorySection-w64ir1-1 lpmpAG"
   >
     <div
-      class="sc-dnqmqq iSdCun"
+      class="LabeledSelectWrapper-sc-1d94pvh-0 koZAra"
     >
       <label
-        class="sc-iwsKbI ishnVy"
+        class="LabelStyled-sc-1d94pvh-1 bWjFns"
         for="category"
       >
         Category
       </label>
       <select
-        class="sc-htoDjs fTgUHt"
+        class="SelectStyle-sc-1tz5py4-1 biretF"
         name="category"
       >
         <option
-          class="sc-gzVnrw ibZhkv"
+          class="Option-sc-1tz5py4-0 grUjbm"
           value="TestValue"
         >
           TestValue
@@ -76,63 +76,63 @@ exports[`generic/organisms/AddEventModal renders 1`] = `
       </select>
     </div>
     <button
-      class="sc-htpNat cdaQKa"
+      class="Primary-sc-12a0ki3-2 imxZGA"
     >
       Edit
     </button>
   </div>
   <div
-    class="sc-jTzLTM eaHDAf"
+    class="TwoColumns-w64ir1-0 cMUdUm"
   >
     <div
-      class="sc-EHOje fpqoIO"
+      class="LabeledInputStyle-haayko-0 hPxfKk"
     >
       <label
-        class="sc-bZQynM snbku"
+        class="LabelStyled-haayko-1 fEltIH"
         for="add-tags"
       >
         Add tags
       </label>
       <input
-        class="sc-ifAKCX cYWJSo"
+        class="InputStyle-sc-1jmrrj1-0 gbepqK"
         name="add-tags"
         type="text"
       />
     </div>
     <div
-      class="sc-gqjmRU foEULD"
+      class="LabeledTagsWrapper-yk8e0z-0 ijUAhs"
     >
       <label
-        class="sc-VigVT iIvxkR"
+        class="LabelStyled-yk8e0z-1 eEyMjh"
       >
         Used recently
       </label>
       <button
-        class="sc-gZMcBi daxmKN"
+        class="TagStyle-eyrq69-0 hPIVFq"
       >
         unit test
       </button>
     </div>
   </div>
   <div
-    class="sc-gqjmRU foEULD"
+    class="LabeledTagsWrapper-yk8e0z-0 ijUAhs"
   >
     <label
-      class="sc-VigVT iIvxkR"
+      class="LabelStyled-yk8e0z-1 eEyMjh"
     >
       Selected tags
     </label>
     <button
-      class="sc-gZMcBi kcpxAK"
+      class="TagStyle-eyrq69-0 gQTpbd"
     >
       story-125
     </button>
   </div>
   <div
-    class="sc-jzJRlG jumTEP"
+    class="AlignRight-w64ir1-2 bDFrer"
   >
     <button
-      class="sc-htpNat elmvaw"
+      class="Primary-sc-12a0ki3-2 bcnANy"
     >
       Create
     </button>
