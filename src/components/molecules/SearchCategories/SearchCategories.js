@@ -74,7 +74,12 @@ class SearchCategories extends React.PureComponent {
 }
 
 SearchCategories.propTypes = {
-  categories: PropTypes.shape({}).isRequired,
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      key: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    }).isRequired
+  ),
   setCategoriesFilter: PropTypes.func.isRequired,
 }
 
