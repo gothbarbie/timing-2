@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Icon from 'generic/atoms/Icon/Icon'
+import Icon from '../../atoms/Icon/Icon'
 
 const NavButtonStyle = styled.button`
   border: none;
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.palette.primary[0]};
   cursor: pointer;
   font-size: 3rem;
   padding: 0;
@@ -17,7 +17,7 @@ const NavButtonStyle = styled.button`
 
   &:hover,
   &:active {
-    color: ${({ theme }) => theme.colors.gray};
+    color: ${({ theme }) => theme.palette.grayScale[0]};
   }
 `
 
