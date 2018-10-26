@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Default = styled.button`
   cursor: pointer;
@@ -7,24 +8,24 @@ const Default = styled.button`
   width: ${({ fullWidth }) => fullWidth && '100%'};
 
   background-color: transparent;
-  color: ${({ theme }) => theme.colors.gray};
-  color: ${({ active, theme }) => active && theme.colors.primary};
+  color: ${({ theme }) => theme.palette.grayScale[0]};
+  color: ${({ active, theme }) => active && theme.palette.primary[0]};
   outline: none;
   font-size: 1.6rem;
   font-weight: 500;
   border: 1px solid transparent;
-  border-color: ${({ active, theme }) => active && theme.colors.gray};
+  border-color: ${({ active, theme }) => active && theme.palette.grayScale[0]};
   padding: 1rem 2rem;
   padding: ${({ size }) => size === 's' && '.5rem'};
 
   &:focus {
-    border-color: ${({ theme }) => theme.colors.primary};
+    border-color: ${({ theme }) => theme.palette.primary[0]};
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.lightGray};
-    color: ${({ theme }) => theme.colors.primary};
-    border-color: ${({ theme }) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.palette.grayScale[1]};
+    color: ${({ theme }) => theme.palette.primary[0]};
+    border-color: ${({ theme }) => theme.palette.grayScale[0]};
   }
 
   &:active {
@@ -36,32 +37,32 @@ const Default = styled.button`
 
 const WithIcon = styled(Default)`
   &:focus {
-    border-color: ${({ theme }) => theme.colors.lightGray};
-    color: ${({ theme }) => theme.colors.primary};
+    border-color: ${({ theme }) => theme.palette.grayScale[2]};
+    color: ${({ theme }) => theme.palette.primary[0]};
   }
 
   &:hover {
-    border-color: ${({ theme }) => theme.colors.gray};
-    color: ${({ theme }) => theme.colors.primary};
-    fill: ${({ theme }) => theme.colors.primary};
+    border-color: ${({ theme }) => theme.palette.grayScale[0]};
+    color: ${({ theme }) => theme.palette.primary[0]};
+    fill: ${({ theme }) => theme.palette.primary[0]};
   }
 `
 
 const Primary = styled(Default)`
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.palette.primary[0]};
+  color: ${({ theme }) => theme.palette.white[0]};
 
-  box-shadow: ${({ active, theme }) =>
+  box-shadow: ${({ active }) =>
     active ? 'inset 0 2px 2px rgba(0, 0, 0, 0.25)' : 'none'};
 
   &:focus {
-    border-color: ${({ theme }) => theme.colors.white};
+    border-color: ${({ theme }) => theme.palette.white[0]};
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.primary};
-    border-color: ${({ theme }) => theme.colors.white};
-    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.palette.primary[0]};
+    border-color: ${({ theme }) => theme.palette.white[0]};
+    color: ${({ theme }) => theme.palette.white[0]};
   }
 `
 
@@ -112,6 +113,17 @@ export const Button = ({
       {children}
     </Default>
   )
+}
+
+Button.propTypes = {
+  active: PropTypes.bool,
+  children: PropTypes.node,
+  fullWidth: PropTypes.bool,
+  hasIcon: PropTypes.bool,
+  primary: PropTypes.bool,
+  size: PropTypes.string,
+  title: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 /** @component */
