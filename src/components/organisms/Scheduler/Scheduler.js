@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TimeSlot from 'generic/molecules/TimeSlot'
+import TimeSlot from '../../molecules/TimeSlot'
 
 const SchedulerStyle = styled.section`
   width: 100%;
@@ -11,7 +11,7 @@ const SchedulerStyle = styled.section`
 const DayNames = styled.section`
   font-size: 1.8rem;
   font-weight: 500;
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.palette.grayScale[0]};
   width: 100%;
   height: 100%;
   display: grid;
@@ -46,7 +46,7 @@ const Times = styled.div`
 `
 
 const Time = styled.div`
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.palette.grayScale[0]};
   font-size: 1.8rem;
   font-weight: 700;
   justify-self: end;
