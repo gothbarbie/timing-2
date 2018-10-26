@@ -14,14 +14,14 @@ const ButtonStyle = styled.button`
     color === 'primary' && theme.palette.primary[0]};
   color: ${({ color, theme }) => color === 'white' && theme.palette.white[0]};
   color: ${({ color, theme }) =>
-    color === 'gray' && theme.palette.grayScale[0]};
+    color === 'gray' && theme.palette.grayScale[2]};
 
   &:active,
   &:hover,
   &:focus {
     color: ${({ theme }) => theme.palette.primary[0]};
     color: ${({ theme, hoverColor }) =>
-      hoverColor === 'gray' && theme.palette.grayScale[0]};
+      hoverColor === 'gray' && theme.palette.grayScale[2]};
   }
 `
 
