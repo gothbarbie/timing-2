@@ -8,6 +8,7 @@ import modalReducer from '../reducers/modalReducer'
 import weekReducer from '../reducers/weekReducer'
 import tagsReducer from '../reducers/tagsReducer'
 import timeSlotsReducer from '../reducers/timeSlotsReducer'
+import databaseErrorReducer from '../reducers/databaseErrorReducer'
 
 const rootReducer = combineReducers({
   categories: categoryReducer,
@@ -16,6 +17,7 @@ const rootReducer = combineReducers({
   tags: tagsReducer,
   week: weekReducer,
   timeSlots: timeSlotsReducer,
+  error: databaseErrorReducer,
 })
 
 const store = createStore(
