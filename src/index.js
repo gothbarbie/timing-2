@@ -13,6 +13,8 @@ import {
   faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons'
 
+import './firebase/firebase'
+
 import App from './components/App'
 
 library.add(
