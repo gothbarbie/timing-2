@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Label from '../../atoms/Label'
@@ -25,5 +26,17 @@ const LabeledTags = ({ label, tags, onClick }) => (
     ))}
   </LabeledTagsWrapper>
 )
+
+LabeledTags.propTypes = {
+  label: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      blue: PropTypes.bool.isRequired,
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  onClick: PropTypes.func.isRequired,
+}
 
 export default LabeledTags
