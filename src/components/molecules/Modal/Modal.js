@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
-import { closeModal } from './modalActions'
+import { closeModal } from '../../../actions/modalActions'
 
 import IconButton from '../../atoms/IconButton'
 

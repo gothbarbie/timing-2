@@ -2,7 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { updateCategory, removeCategory } from './categoryActions'
+import {
+  updateCategory,
+  removeCategory,
+} from '../../../actions/categoryActions'
 
 import IconButton from '../../atoms/IconButton'
 

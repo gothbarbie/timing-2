@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { nextWeek, previousWeek } from './weekActions'
+import { nextWeek, previousWeek } from '../../../actions/weekActions'
 
 import H1 from '../../atoms/Typography/H1'
 import NavButton from '../../molecules/NavButton/NavButton'

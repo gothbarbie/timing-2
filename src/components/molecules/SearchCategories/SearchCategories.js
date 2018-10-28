@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { setCategoriesFilter } from './categoriesFilterActions'
-import { getFilteredCategories } from './categoriesSelectors'
+import { setCategoriesFilter } from '../../../actions/categoriesFilterActions'
+import { getFilteredCategories } from '../../../actions/categoriesSelectors'
 
 import Icon from '../../atoms/Icon'
 import Button from '../../atoms/Button'
@@ -37,13 +37,13 @@ const NoResults = styled.div`
 
 class SearchCategories extends React.PureComponent {
   handleSetCategoriesFilter = event => {
-    console.log('handleSetCategoriesFilter', event.target.value)
-    this.props.setCategoriesFilter(event.target.value)
+    const { setCategoriesFilter } = this.props
+    setCategoriesFilter(event.target.value)
   }
 
   render() {
-    console.log('categories', this.props.categories)
     const { categories } = this.props
+    console.log('categories', categories)
     return (
       <>
         <FormSection>

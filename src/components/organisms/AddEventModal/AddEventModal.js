@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { connect } from 'react-redux'
 
-import { openModal } from '../../molecules/Modal/modalActions'
+import { openModal } from '../../../actions/modalActions'
 
 import Button from '../../atoms/Button'
 
@@ -74,13 +74,13 @@ const AddEventModal = ({ openModal }) => (
       <LabeledTags
         label="Used recently"
         onClick={id => console.log('added', id)}
-        tags={[{ blue: true, name: 'unit test', id: 1 }]}
+        tags={[{ blue: true, name: 'unit test', id: '1' }]}
       />
     </TwoColumns>
     <LabeledTags
       label="Selected tags"
       onClick={id => console.log('deleted', id)}
-      tags={[{ blue: false, name: 'story-125', id: 3 }]}
+      tags={[{ blue: false, name: 'story-125', id: '3' }]}
     />
     <AlignRight>
       <Button primary>Create</Button>
@@ -90,13 +90,24 @@ const AddEventModal = ({ openModal }) => (
 
 AddEventModal.propTypes = {
   openModal: PropTypes.func.isRequired,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      blue: PropTypes.bool.isRequired,
+      name: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
 }
+
+const mapStateToProps = ({ tags }) => ({
+  tags,
+})
 
 const mapDispatchToProps = {
   openModal,
 }
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(AddEventModal)
