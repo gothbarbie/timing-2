@@ -1,4 +1,4 @@
-import { SET_TIMESLOTS } from './timeSlotsConstants'
+import { SET_TIMESLOTS } from '../actions/timeSlotsActions'
 
 const initialState = {}
 

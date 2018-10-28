@@ -1,4 +1,4 @@
-import { REMOVE_CATEGORY, UPDATE_CATEGORY } from './categoryConstants'
+import { REMOVE_CATEGORY, UPDATE_CATEGORY } from '../actions/categoryActions'
 
 const initialState = {
   abc123: { name: 'test-1' },

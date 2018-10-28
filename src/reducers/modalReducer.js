@@ -1,4 +1,4 @@
-import { SHOW_MODAL, HIDE_MODAL } from './modalTypes'
+import { SHOW_MODAL, HIDE_MODAL } from '../actions/modalActions'
 
 const initialState = { content: 'addEvent', visible: false }
 

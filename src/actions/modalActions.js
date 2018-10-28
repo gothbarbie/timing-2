@@ -1,4 +1,5 @@
-import { HIDE_MODAL, SHOW_MODAL } from './modalTypes'
+export const SHOW_MODAL = 'SHOW_MODAL'
+export const HIDE_MODAL = 'HIDE_MODAL'
 
 export const closeModal = () => ({
   type: HIDE_MODAL,

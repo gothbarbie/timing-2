@@ -1,4 +1,5 @@
-import { REMOVE_CATEGORY, UPDATE_CATEGORY } from './categoryConstants'
+export const REMOVE_CATEGORY = 'REMOVE_CATEGORY'
+export const UPDATE_CATEGORY = 'UPDATE_CATEGORY'
 
 export const removeCategory = id => ({
   type: REMOVE_CATEGORY,

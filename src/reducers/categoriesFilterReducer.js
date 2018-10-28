@@ -1,4 +1,4 @@
-import { SET_CATEGORIES_FILTER } from './categoriesFilterConstants'
+import { SET_CATEGORIES_FILTER } from '../actions/categoriesFilterActions'
 
 export default (state = '', action) => {
   switch (action.type) {

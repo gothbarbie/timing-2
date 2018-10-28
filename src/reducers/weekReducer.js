@@ -1,4 +1,4 @@
-import { INCREMENT_WEEK, DECREMENT_WEEK } from './weekConstants.js'
+import { INCREMENT_WEEK, DECREMENT_WEEK } from '../actions/weekActions.js'
 
 const initialState = 1
 
