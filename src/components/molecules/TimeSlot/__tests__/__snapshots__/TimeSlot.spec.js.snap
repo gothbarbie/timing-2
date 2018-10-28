@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/molecules/TimeSlot renders with data 1`] = `
+<div
+  class="TimeSlotStyle-xpn2pf-0 iwJCDl"
+>
+  <div
+    class="Title-xpn2pf-1 iEbIfR"
+  >
+    TimeSlot Test
+  </div>
+  <button
+    class="ButtonStyle-sc-1vcx5rr-0 efKZGt"
+    color="gray"
+  />
+</div>
+`;
+
+exports[`components/molecules/TimeSlot renders without data 1`] = `
+<div
+  class="TimeSlotStyle-xpn2pf-0 kqNPtK"
+>
+  <button
+    class="WithIcon-sc-12a0ki3-1 gTgDPM"
+  />
+</div>
+`;
