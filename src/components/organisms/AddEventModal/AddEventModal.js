@@ -90,13 +90,7 @@ const AddEventModal = ({ openModal }) => (
 
 AddEventModal.propTypes = {
   openModal: PropTypes.func.isRequired,
-  tags: PropTypes.arrayOf(
-    PropTypes.shape({
-      blue: PropTypes.bool.isRequired,
-      name: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-    }).isRequired
-  ).isRequired,
+  tags: PropTypes.shape({}).isRequired,
 }
 
 const mapStateToProps = ({ tags }) => ({
